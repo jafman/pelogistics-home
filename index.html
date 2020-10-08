@@ -211,16 +211,16 @@
 
 
 	<!-- Get A Quote  -->
-	<div class="modal contact-modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal contact-modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true" id="quote-modal">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content margin-top-150px background-main-color">
 				<div class="row no-gutters">
 					<div class="col-lg-5">
-						<img src="http://placehold.it/405x605" alt="">
+						<img src="assets/img/box-md-01.jpg" alt="">
 					</div>
 					<div class="col-lg-7">
 						<div class="padding-30px">
-							<h3 class="padding-bottom-15px">Get A Free Quote</h3>
+							<h3 class="padding-bottom-15px">Talk to us.</h3>
 							<form>
 								<div class="form-row">
 									<div class="form-group col-md-6">
@@ -240,7 +240,7 @@
 									<label>Message</label>
 									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 								</div>
-								<a href="#" class="btn-sm btn-lg btn-block background-dark text-white text-center  text-uppercase rounded-0 padding-15px">SEND MESSAGE</a>
+								<button type="button" class="btn btn-sm btn-lg btn-block background-dark text-white text-center  text-uppercase rounded-0 padding-15px" style="cursor: pointer;" onclick="sendMail()"><span id="mail-msg">SEND MESSAGE</span></button>
 							</form>
 						</div>
 					</div>
@@ -267,7 +267,7 @@
 					</div>
 
 					<!-- LAYER NR. 2 -->
-					<div class="tp-caption rev-btn " id="slide-11-layer-2" data-x="['left','left','left','center']" data-hoffset="['0','41','47','7']" data-y="['top','top','top','top']" data-voffset="['345','372','378','375']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":640,"speed":1120,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:transparent;bc:rgb(255,255,255);"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 6; white-space: nowrap; font-size: 14px; line-height: 17px; font-weight: 500; color: rgba(255,255,255,1); letter-spacing: px;font-family:Poppins;background-color:rgb(0,25,211);border-color:rgb(0,25,211);border-style:solid;border-width:2px 2px 2px 2px;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Contact Us </div>
+					<div class="tp-caption rev-btn " id="slide-11-layer-2" data-x="['left','left','left','center']" data-hoffset="['0','41','47','7']" data-y="['top','top','top','top']" data-voffset="['345','372','378','375']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":640,"speed":1120,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:transparent;bc:rgb(255,255,255);"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 6; white-space: nowrap; font-size: 14px; line-height: 17px; font-weight: 500; color: rgba(255,255,255,1); letter-spacing: px;font-family:Poppins;background-color:rgb(0,25,211);border-color:rgb(0,25,211);border-style:solid;border-width:2px 2px 2px 2px;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;" onclick="showQuoteModal()">Contact Us </div>
 				</li>
 			</ul>
 			<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
@@ -275,7 +275,7 @@
 	</div>
 	<!-- END REVOLUTION SLIDER -->
 
-	<div class="nile-about-section">
+	<div class="nile-about-section" id="ourservices">
 		<div class="container">
 			<!-- Title -->
 			<div class="section-title margin-bottom-40px">
@@ -283,7 +283,8 @@
 					<div class="col-lg-7">
 						<div class="icon text-main-color"><i class="fa fa-truck"></i></div>
 						<div class="h2">Our Service</div>
-						<div class="des">In quis luctus dolor. Sed ac libero arcu. Phasellus vulputate ultrices augue, eget feugiat lectus efficitur in. Nulla non pharetra justo. Nunc viverra consectetur bibendum. </div>
+						<div class="des">We are a last mile delivery courier company in Nigeria. At PE Logistics, we support individuals and businesses
+							by ensuring your parcels get to their intended destinations as quick as possible while guaranteeing safety. </div>
 					</div>
 				</div>
 			</div>
@@ -294,13 +295,13 @@
 				<div class="col-lg-4">
 					<div class="service-icon-box">
 						<div class="icon"><img src="assets/icons/service-dark-4.png" alt=""></div>
-						<a href="#" class="title h2">Restaurant Delivery</a>
-						<div class="des">Ut elit tellus, luctus nec magna mattis et, pulvinar dapibus lorem leo ultricies et vitae enim.</div>
+						<a href="#" class="title h2">Sameday Deliveries</a>
+						<div class="des">(Bulk / Retail)</div>
 					</div>
 					<div class="service-icon-box">
 						<div class="icon"><img src="assets/icons/service-dark-4.png" alt=""></div>
-						<a href="#" class="title h2">Grocery Delivery</a>
-						<div class="des">Ut elit tellus, luctus nec magna mattis et, pulvinar dapibus lorem leo ultricies et vitae enim.</div>
+						<a href="#" class="title h2">Dedicated Food Delivery</a>
+						<div class="des"></div>
 					</div>
 				</div>
 				<div class="col-lg-4">
@@ -311,13 +312,13 @@
 				<div class="col-lg-4">
 					<div class="service-icon-box">
 						<div class="icon"><img src="assets/icons/service-dark-4.png" alt=""></div>
-						<a href="#" class="title h2">Couriers</a>
-						<div class="des">Ut elit tellus, luctus nec magna mattis et, pulvinar dapibus lorem leo ultricies et vitae enim.</div>
+						<a href="#" class="title h2">Corporate Courier Services</a>
+						<div class="des"></div>
 					</div>
 					<div class="service-icon-box">
 						<div class="icon"><img src="assets/icons/service-dark-4.png" alt=""></div>
-						<a href="#" class="title h2">Other Business Deliveries </a>
-						<div class="des">Ut elit tellus, luctus nec magna mattis et, pulvinar dapibus lorem leo ultricies et vitae enim.</div>
+						<a href="#" class="title h2">Scheduled Delivery</a>
+						<div class="des"></div>
 					</div>
 				</div>
 
@@ -336,7 +337,7 @@
 
 
 
-	<div class="call-action ba-1">
+	<div class="call-action ba-1" id="aboutus">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7 padding-tb-15px">
@@ -349,20 +350,22 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-4 sm-mb-45px">
 							<a href="#" class="action-bottom layout-1">
-								<img src="assets/icons/small-icon-1.png" alt="">
-								<h4>Tell Friend</h4>
+								<img src="assets/icons/service-light-4.png" alt="" width="30" height="30">
+								<h4>Safety</h4>
 							</a>
 						</div>
+						 
 						<div class="col-lg-4 col-md-4 sm-mb-45px">
 							<a href="#" class="action-bottom layout-1">
-								<img src="assets/icons/small-icon-2.png" alt="">
-								<h4>Read More</h4>
+								<img src="assets/icons/service-light-2.png" alt="" width="30" height="30">
+								<h4>Speed</h4>
 							</a>
 						</div>
+						 
 						<div class="col-lg-4 col-md-4">
 							<a href="#" class="action-bottom layout-1">
-								<img src="assets/icons/small-icon-3.png" alt="">
-								<h4>Contact Us</h4>
+								<img src="assets/icons/small-icon-1.png" alt="">
+								<h4>Reliance</h4>
 							</a>
 						</div>
 					</div>
@@ -387,11 +390,11 @@
 						<h2 class="title-text">Who We Are ?</h2>
 					</div>
 					<div class="about-text margin-tb-25px">
-						<h4>25 years of experience in Logistics services</h4>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-						<br> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ...
+						<h4></h4>
+						We are a last mile delivery courier company in Nigeria. At PE Logistics, we support individuals and businesses
+							by ensuring your parcels get to their intended destinations as quick as possible while guaranteeing safety.
 					</div>
-					<a href="#" class="nile-bottom sm">Contact Us</a>
+					<a href="#" class="nile-bottom sm" onclick="showQuoteModal()">Contact Us</a>
 
 				</div>
 				<div class="col-lg-6">
@@ -406,7 +409,7 @@
 
 
 
-	<div class="section padding-tb-100px section-ba-2">
+	<div class="section padding-tb-100px section-ba-2" id="customertestimonials">
 		<div class="container">
 			<!-- Title -->
 			<div class="section-title margin-bottom-40px">
@@ -414,7 +417,7 @@
 					<div class="col-lg-7">
 						<div class="icon text-main-color"><i class="fa fa-commenting-o"></i></div>
 						<div class="h2">Testimonials</div>
-						<div class="des">In quis luctus dolor. Sed ac libero arcu. Phasellus vulputate ultrices augue, eget feugiat lectus efficitur in. Nulla non pharetra justo. Nunc viverra consectetur bibendum. </div>
+						<div class="des">   </div>
 					</div>
 				</div>
 			</div>
@@ -425,10 +428,12 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="testimonials layout-1">
 						<div class="icon"></div>
-						<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</div>
+						<div class="text">Wow! I must say out of the 6 Logistics I got on my contact, you are the fastest and trusted
+							ever, aint bragging now!!
+						</div>
 						<div class="meta">
-							<div class="testimonials-thum"><img src="http://placehold.it/50x50" alt=""></div>
-							<div class="name">Rabie Elkheir</div>
+							 
+							<div class="name">Balarite's Kitchen</div>
 						</div>
 					</div>
 				</div>
@@ -437,10 +442,12 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="testimonials layout-1">
 						<div class="icon"></div>
-						<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</div>
+						<div class="text">Wow! I must say out of the 6 Logistics I got on my contact, you are the fastest and trusted
+							ever, aint bragging now!!
+						</div>
 						<div class="meta">
-							<div class="testimonials-thum"><img src="http://placehold.it/50x50" alt=""></div>
-							<div class="name">Khalid Alnoor</div>
+							 
+							<div class="name">Balarite's Kitchen</div>
 						</div>
 					</div>
 				</div>
@@ -449,10 +456,12 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="testimonials layout-1">
 						<div class="icon"></div>
-						<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</div>
+						<div class="text">Wow! I must say out of the 6 Logistics I got on my contact, you are the fastest and trusted
+							ever, aint bragging now!!
+						</div>
 						<div class="meta">
-							<div class="testimonials-thum"><img src="http://placehold.it/50x50" alt=""></div>
-							<div class="name">Amal Salman</div>
+							 
+							<div class="name">Balarite's Kitchen</div>
 						</div>
 					</div>
 				</div>
@@ -461,11 +470,11 @@
 			</div>
 
 
-
+			<!--
 			<div class="text-center">
 				<a href="#" class="nile-bottom md">Show all <i class="fa fa-arrow-right"></i> </a>
 			</div>
-
+			-->
 		</div>
 	</div>
 
@@ -476,58 +485,56 @@
 			<div class="container">
 				<div class="row">
 
-					<!-- partners item -->
+					<!--  
 					<div class="col-lg-2 col-md-3 col-sm-6">
 						<div class="partners-item margin-bottom-tb-15px text-center">
 							<img src="http://placehold.it/170x80" alt="">
 						</div>
 					</div>
-					<!--//  partners item -->
+					 
 
 
-					<!-- partners item -->
+					 
 					<div class="col-lg-2 col-md-3 col-sm-6">
 						<div class="partners-item margin-bottom-tb-15px text-center">
 							<img src="http://placehold.it/170x80" alt="">
 						</div>
 					</div>
-					<!--//  partners item -->
+					 
 
-
-					<!-- partners item -->
+					 
 					<div class="col-lg-2 col-md-3 col-sm-6">
 						<div class="partners-item margin-bottom-tb-15px text-center">
 							<img src="http://placehold.it/170x80" alt="">
 						</div>
 					</div>
-					<!--//  partners item -->
+					 
 
 
-					<!-- partners item -->
+					 
 					<div class="col-lg-2 col-md-3 col-sm-6">
 						<div class="partners-item margin-bottom-tb-15px text-center">
 							<img src="http://placehold.it/170x80" alt="">
 						</div>
 					</div>
-					<!--//  partners item -->
+					 
 
-
-					<!-- partners item -->
+					 
 					<div class="col-lg-2 col-md-3 col-sm-6">
 						<div class="partners-item margin-bottom-tb-15px text-center">
 							<img src="http://placehold.it/170x80" alt="">
 						</div>
 					</div>
-					<!--//  partners item -->
+					 
 
 
-					<!-- partners item -->
+					 
 					<div class="col-lg-2 col-md-3 col-sm-6">
 						<div class="partners-item margin-bottom-tb-15px text-center">
 							<img src="http://placehold.it/170x80" alt="">
 						</div>
 					</div>
-					<!--//  partners item -->
+					  -->
 
 				</div>
 			</div>
@@ -582,7 +589,7 @@
 							<a href="#"><img src="assets/img/logo-01.jpg" alt=""></a>
 						</div>
 						<div class="text margin-bottom-35px">
-							Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							Your prefered Logistics partner. 
 						</div>
 						<a href="https://merchant.pelogistics.ng" class="nile-bottom sm" target="_blank">Order Now</a>
 					</div>
@@ -592,10 +599,10 @@
 					<div class="nile-widget widget_nav_menu sm-mb-45px">
 						<h2 class="title">Our Services</h2>
 						<ul class="footer-menu">
-							<li><a href="#">Restaurant Delivery </a></li>
-							<li><a href="#">Grocery Delivery </a></li>
-							<li><a href="#">Couriers </a></li>
-							<li><a href="#">Other Business Deliveries  </a></li>
+							<li><a href="#">Dedicated Food Delivery </a></li>
+							<li><a href="#">Corporate Courier Services</a></li>
+							<li><a href="#">Dedicated Food Delivery </a></li>
+							<li><a href="#">24 Hours free warehousing </a></li>
 						</ul>
 					</div>
 				</div>
@@ -606,9 +613,9 @@
 						<h2 class="title">Navigation</h2>
 						<ul class="footer-menu">
 							<li><a href="#">Home </a></li>
-							<li><a href="#">About Us </a></li>
-							<li><a href="#">Our Services </a></li>
-							<li><a href="#">Testimonials </a></li> 
+							<li><a href="#aboutus">About Us </a></li>
+							<li><a href="#ourservices">Our Services </a></li>
+							<li><a href="#customertestimonials">Testimonials </a></li> 
 						</ul>
 					</div>
 				</div>
@@ -672,6 +679,7 @@
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/mailer.js"></script>
 
 </body>
 
